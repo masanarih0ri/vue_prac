@@ -24,7 +24,7 @@ export default {
   methods: {
     changeName() {
       // this.$emitで親コンポーネントに値を渡す。第一引数には親コンポーネントで定義したv-onのイベント名を設定する。第二引数には、親に渡す値を設定する。
-      this.$emit("update:user-name", this.userNameData);
+      this.$emit("update:userName", this.userNameData);
     }
   }
 };

@@ -6,7 +6,7 @@
     <!-- @update:user-nameで子のコンポーネントからイベント発火を受け取る -->
     <!-- イベント発火したらuserName = $eventでuserNameの値が書き換わる -->
     <!-- $eventにはthis.$emit("update:user-name", this.userNameData);の第二引数の値が入っている -->
-    <UserForm :user-name="userName" @update:user-name="userName = $event" />
+    <UserForm :user-name.sync="userName" />
   </div>
 </template>
 <script>
